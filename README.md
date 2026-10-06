@@ -213,12 +213,42 @@ Drawn from the next-steps sections of both documents:
 
 ## Documents
 
+### Capstone (2025)
+
 | File | What it is |
 |---|---|
 | [`Capstone_Poster.pptx`](Capstone_Poster.pptx) | Final poster — architecture, data composition, model comparison, held-out results, error analysis |
 | [`Project_Summary.pdf`](Project_Summary.pdf) | Interim summary from an earlier stage — baseline figures, the 923-example corpus and 1:1.5 balancing that preceded the final design |
 
 Where the two disagree, the poster is final.
+
+### Earlier coursework (November 2023) — `docs/`
+
+These three documents come from an **earlier course project**, *Football and Racism*,
+**co-authored with Siva Meenakshi**, about eighteen months before the capstone. They are
+planning and literature-review documents written in advance of implementation, and they
+describe a **different intended design** from the one the capstone ultimately used — LLama2
+rather than RoBERTa, PostgreSQL/MongoDB for storage, Instagram as an additional source, and
+BoW/TF-IDF/Word2Vec feature extraction alongside sentiment analysis, NER and topic modelling.
+
+They are included for the research trail, not as capstone results. Nothing in them should be
+read as describing the final system.
+
+| File | What it is |
+|---|---|
+| [`docs/2023-11_Architecture_Write_Up.pdf`](docs/2023-11_Architecture_Write_Up.pdf) | Intended architecture, data-collection plan and annotation protocol |
+| [`docs/2023-11_Approach_Write_Up.pdf`](docs/2023-11_Approach_Write_Up.pdf) | Collection process by source, preprocessing and feature-extraction plan, analysis and reporting |
+| [`docs/2023-11_Related_Research.pdf`](docs/2023-11_Related_Research.pdf) | Literature review — bias mitigation, race in NLP, extremism detection, veiled hate speech |
+
+The architecture write-up documents the data-collection and annotation methodology:
+YouTube Data API collection across Big Five league channels, Reddit via the API and PRAW
+across r/Soccer, r/PremierLeague and r/Football, BeautifulSoup scraping of sports news
+portals, and manual annotation by two annotators into three labels (racist, not racist,
+implicitly racist) with reliability checks and iterative review.
+
+The literature review's engagement with Han & Tsvetkov's *Fortifying Toxic Speech Detectors
+Against Veiled Toxicity* and Field et al.'s *A Survey of Race, Racism, and Anti-Racism in NLP*
+anticipates the implicit-racism problem the capstone went on to address.
 
 ---
 
